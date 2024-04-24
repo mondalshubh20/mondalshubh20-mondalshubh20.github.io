@@ -1,37 +1,25 @@
-body{
-
-    background: linear-gradient(to left, #a191db, #f0eaf2); 
+body {
+    background: linear-gradient(to left, #a191db, #f0eaf2);
+    margin: 0; /* Reset default margin */
+    padding: 0; /* Reset default padding */
 }
 
 .container {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 50px;
+    margin-top: 20%; /* Adjust the top margin for better centering */
 }
 
-.sgpa-container {
-    text-align: center;
-    padding: 20px;
-    position: absolute;
-    top: 30%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    border-radius: 8px;
-    background-color: rgba(239, 221, 241, 0.362);
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
+.sgpa-container,
 .ygpa-container {
     text-align: center;
     padding: 20px;
-    position: absolute;
-    top: 65%;
-    left: 50%;
-    transform: translate(-50%, -50%);
     border-radius: 8px;
     background-color: rgba(239, 221, 241, 0.362);
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 90%; /* Adjust container width */
+    max-width: 400px; /* Set maximum width */
 }
 
 h2 {
@@ -41,6 +29,8 @@ h2 {
 input[type="number"] {
     padding: 8px;
     margin: 10px 0;
+    width: 100%; /* Make inputs full width */
+    box-sizing: border-box; /* Include padding and border in width calculation */
 }
 
 button {
@@ -49,6 +39,8 @@ button {
     color: white;
     border: none;
     cursor: pointer;
+    width: 100%; /* Make button full width */
+    box-sizing: border-box; /* Include padding and border in width calculation */
 }
 
 button:hover {
@@ -69,12 +61,10 @@ button:hover {
 .semester-input {
     margin-bottom: 10px;
 }
+
 footer {
     background-color: #f8f9fa;
     padding: 20px 0;
     text-align: center;
-    position: fixed;
-    left: 0;
-    bottom: 0;
     width: 100%;
 }
