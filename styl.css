@@ -1,0 +1,80 @@
+body{
+
+    background: linear-gradient(to left, #a191db, #f0eaf2); 
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.sgpa-container {
+    text-align: center;
+    padding: 20px;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 8px;
+    background-color: rgba(239, 221, 241, 0.362);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.ygpa-container {
+    text-align: center;
+    padding: 20px;
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 8px;
+    background-color: rgba(239, 221, 241, 0.362);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    margin-top: 0;
+}
+
+input[type="number"] {
+    padding: 8px;
+    margin: 10px 0;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#sgpaResult,
+#ygpaResult {
+    margin-top: 10px;
+}
+
+.ygpa-inputs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.semester-input {
+    margin-bottom: 10px;
+}
+footer {
+    background-color: #f8f9fa;
+    padding: 20px 0;
+    text-align: center;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
