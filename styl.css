@@ -1,12 +1,14 @@
 body {
     background: linear-gradient(to left, #a191db, #f0eaf2); 
+    margin: 0; /* Remove default body margin */
+    padding: 0; /* Remove default body padding */
 }
 
 .container {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 50px;
+    margin-top: 20px; /* Reduce top margin for smaller screens */
 }
 
 .sgpa-container, .ygpa-container {
@@ -15,20 +17,12 @@ body {
     border-radius: 8px;
     background-color: rgba(239, 221, 241, 0.362);
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 80%; /* Set width to 80% for both containers */
+    max-width: 400px; /* Set max-width to 400px for better compatibility on smaller screens */
 }
 
 .sgpa-container {
-    position: absolute;
-    top: 20%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
-.ygpa-container {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    margin-bottom: 20px; /* Add bottom margin for spacing between containers */
 }
 
 h2 {
@@ -38,6 +32,8 @@ h2 {
 input[type="number"] {
     padding: 8px;
     margin: 10px 0;
+    width: 100%; /* Make inputs fill container width */
+    box-sizing: border-box; /* Include padding and border in width calculation */
 }
 
 button {
@@ -46,6 +42,8 @@ button {
     color: white;
     border: none;
     cursor: pointer;
+    width: 100%; /* Make buttons fill container width */
+    box-sizing: border-box; /* Include padding and border in width calculation */
 }
 
 button:hover {
@@ -74,15 +72,4 @@ footer {
     left: 0;
     bottom: 0;
     width: 100%;
-}
-
-/* Media Query for smaller screens */
-@media (max-width: 768px) {
-    .container {
-        margin-top: 20px;
-    }
-
-    .sgpa-container, .ygpa-container {
-        width: 80%;
-    }
 }
